@@ -1,0 +1,21 @@
+*** Tire Logic ***
+Input 32 36 32 35 for values in parentheses.
+
+Enter tire pressures when prompted.
+Input right front pressure: 32
+Input left front pressure: 33
+Input right rear pressure: 34
+Input left rear pressure: 35
+
+*** Checking each tire's pressure ***
+Right front 32 (Perfect): Perfect
+Left front 33 (High): OK
+Right rear 34 (Low): OK
+Left rear 35 (OK): OK
+
+*** Comparing side to side pressure ***
+Front pressure comparison (Uneven): OK
+Rear pressure comparison (OK): OK
+
+*** Overall Status ***
+Tire inflation (BAD): OK
