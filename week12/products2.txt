@@ -1,0 +1,10 @@
+Milk
+
+3.95
+
+Whole-wheat bread\n
+2.99
+\n
+Manny\n
+5.95
+\n
