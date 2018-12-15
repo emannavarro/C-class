@@ -1,0 +1,96 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+int rockpaper(int user, int computer);
+void winloss(int win, int loss, int tie);
+int main()
+{
+ string input;
+ int game;
+
+srand (time(NULL));
+
+int computer = rand() % 3 + 1;
+
+int user = 0, loss=0, win=0, tie=0;
+char repeat = 'y';
+
+while ('y' == repeat) {
+
+std::cout << "====================\n";
+std::cout << "rock paper scissors!\n";
+std::cout << "====================\n";
+
+std::cout << "1) Rock\n";
+std::cout << "2) Paper\n";
+std::cout << "3) scissors\n";
+std::cout << "shoot! ";
+cin>>user;
+
+
+
+game=rockpaper(user, computer);
+if (game== 1){
+    win++;
+    }
+ else if(game== 2){
+     loss++;
+     }
+ else if (game==3){tie++;}
+winloss(win,loss,tie);
+
+        cout<<endl;
+        cout << "\nPlaying an exciting game!\n";
+        cout << "Do you want to play again? (y/n) ";
+        cin>>ws;
+        cin >> repeat;
+
+ }
+  return 0;
+
+
+}
+
+int rockpaper(int user, int computer)
+{
+  if (user == computer){
+
+    std::cout<<"Tie!";
+    return 3;
+  }else if(user==1 and computer==2){
+
+    std::cout<<"Computer wins!";
+    return 2;
+  }else if (user==1 and computer==3 ){
+
+    std::cout<<"You win!";
+    return 1;
+  } else if (user==2 and computer==1){
+
+   std::cout<<"You win!";
+   return 1;
+  } else if(user ==2 and computer==3){
+
+    std::cout<<"Computer wins!";
+    return 2;
+  }else if (user==3 and computer==1){
+
+    std::cout<<"Computer wins!";
+    return 2;
+  } else if (user==3 and computer==2){
+
+    std::cout<<"You win!";
+    return 1;
+  }
+
+}
+
+void winloss(int win, int loss, int tie){
+
+
+std::cout<<"wins: "<<win<< " "<<"loss: "<<loss<< " "<<"tie: "<<tie<<endl;
+
+
+
+    }
